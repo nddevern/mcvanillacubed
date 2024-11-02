@@ -11,6 +11,11 @@ minecraft/config/inventoryprofilesnext/*/
 minecraft/config/minihud/*
 minecraft/config/spark/tmp/*
 minecraft/config/stack-to-nearby-chests/locked-slots/*
+config/litematica/*
+config/inventoryprofilesnext/*/
+config/minihud/*
+config/spark/tmp/*
+config/stack-to-nearby-chests/locked-slots/*
 minecraft/crash-reports/*
 minecraft/data/*
 minecraft/essential/*
@@ -21,22 +26,14 @@ minecraft/ops.json
 minecraft/options.txt
 minecraft/patchouli_data.json
 minecraft/irisUpdateInfo.json
-
 minecraft/polymer-resourcepack.zip
-
 minecraft/resourcepacks/
-
 minecraft/icon.png
-
 minecraft/saves/*
 minecraft/screenshots/
-
 minecraft/shaderpacks/
-
 minecraft/supportercache.json
-
 minecraft/usercache.json
-
 minecraft/usernamecache.json
 
 modlist.html
