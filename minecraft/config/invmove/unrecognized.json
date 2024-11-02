@@ -29,10 +29,12 @@
     "loaderCommon.fabric.com.seibel.distanthorizons.common.wrappers.gui.ClassicConfigGUI$ConfigScreen": true,
     "net.irisshaders.iris.gui.screen.ShaderPackScreen": true,
     "io.github.xiaocihua.stacktonearbychests.compat.ModMenuApiImpl$1": true,
-    "org.anti_ad.mc.ipnext.gui.GUIDEEditorScreen": true
+    "org.anti_ad.mc.ipnext.gui.GUIDEEditorScreen": true,
+    "vazkii.patchouli.client.book.gui.GuiBookLanding": true
   },
   "hideBackground": {
     "com.illusivesoulworks.diet.client.screen.DietScreen": true,
-    "net.minecraft.class_4895": true
+    "net.minecraft.class_4895": true,
+    "vazkii.patchouli.client.book.gui.GuiBookLanding": true
   }
 }

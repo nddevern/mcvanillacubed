@@ -240,7 +240,7 @@ _version = 2
 				enableBeaconRendering = true
 				#
 				# If true LOD clouds will be rendered.
-				enableCloudRendering = true
+				enableCloudRendering = false
 
 			[client.advanced.graphics.advancedGraphics]
 				#

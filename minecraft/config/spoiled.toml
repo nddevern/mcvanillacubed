@@ -1,8 +1,8 @@
 [general]
 containerModifier = ["minecraft:shulker_box,0"]
-spoilRate = 30
+spoilRate = 90
 initializeSpoiling = true
-mergeSpoilingFood = false
+mergeSpoilingFood = true
 spoilEverything = false
 spoilBlacklist = ["minecraft:rotten_flesh", "minecraft:enchanted_golden_apple"]
 defaultSpoilTime = 40

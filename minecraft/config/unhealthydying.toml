@@ -1,5 +1,5 @@
 [general]
-minimumHealth = 2
+minimumHealth = 16
 healthPerDeath = 2
 reducedHealthMessage = true
 healthSetting = "SEPARATE"

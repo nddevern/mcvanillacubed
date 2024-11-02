@@ -8,7 +8,7 @@ CurseForge: https://www.curseforge.com/minecraft/mc-mods/expanded-ecosphere
 */
 {
 	// Whether updates should be announced in chat when entering a world
-	"showUpdates": true,
+	"showUpdates": false,
 	// Whether to announce important updates even if the above setting is disabled.
 	"showBigUpdates": true,
 	// Selects the background block in the config screen. Only makes sense in-game.

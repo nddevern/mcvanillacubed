@@ -3,7 +3,7 @@
   "distanceFactor": 0.1,
   "increasingTime": 60,
   "timeFactor": 0.05,
-  "heightDistance": 30,
+  "heightDistance": 10,
   "heightFactor": 0.1,
   "maxFactorHealth": 3.0,
   "maxFactorDamage": 3.0,
