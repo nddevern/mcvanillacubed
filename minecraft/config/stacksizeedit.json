@@ -1,0 +1,10 @@
+{
+  "enableMaxSize": false,
+  "maxStacker": 99,
+  "itemOverride": [
+    "#c:not_stackable:1",
+    "#c:16_stackable:16"
+  ],
+  "fontOverride": true,
+  "itemCountScaleInt": 25
+}

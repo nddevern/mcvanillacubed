@@ -1,0 +1,11 @@
+[general]
+containerModifier = ["minecraft:shulker_box,0"]
+spoilRate = 30
+initializeSpoiling = true
+mergeSpoilingFood = false
+spoilEverything = false
+spoilBlacklist = ["minecraft:rotten_flesh", "minecraft:enchanted_golden_apple"]
+defaultSpoilTime = 40
+defaultSpoilItem = "minecraft:rotten_flesh"
+[compat]
+spoilTagBlacklist = []

@@ -1,0 +1,38 @@
+{
+  "allowMovement": {
+    "net.minecraft.class_434": true,
+    "net.minecraft.class_433": true,
+    "gg.essential.gui.about.AboutMenu": true,
+    "gg.essential.gui.wardrobe.Wardrobe": true,
+    "com.terraformersmc.modmenu.gui.ModsScreen": true,
+    "dev.shwg.smoothswapping.config.ConfigScreen": true,
+    "org.anti_ad.mc.ipnext.gui.ConfigScreen": true,
+    "me.jellysquid.mods.sodium.client.gui.SodiumOptionsGUI": true,
+    "net.minecraft.class_407": true,
+    "fi.dy.masa.minihud.gui.GuiConfigs": true,
+    "dev.isxander.yacl3.gui.YACLScreen": true,
+    "gg.essential.gui.friends.SocialMenu": true,
+    "gg.essential.gui.sps.WorldShareSettingsGui": true,
+    "net.coderbot.iris.gui.screen.ShaderPackScreen": true,
+    "com.illusivesoulworks.diet.client.screen.DietScreen": true,
+    "gg.essential.gui.emotes.EmoteWheel": true,
+    "me.shedaniel.clothconfig2.gui.ClothConfigScreen": true,
+    "net.minecraft.class_5375": true,
+    "betteradvancements.gui.BetterAdvancementsScreen": true,
+    "gg.essential.gui.screenshot.components.ScreenshotBrowser": true,
+    "gg.essential.vigilance.gui.SettingsGui": true,
+    "xerca.xercapaint.client.GuiCanvasView": true,
+    "io.github.thecsdev.betterstats.client.gui.screen.BetterStatsScreen": true,
+    "net.minecraft.class_4895": true,
+    "net.minecraft.class_410": true,
+    "gg.essential.gui.vigilancev2.VigilanceV2SettingsGui": true,
+    "loaderCommon.fabric.com.seibel.distanthorizons.common.wrappers.gui.ClassicConfigGUI$ConfigScreen": true,
+    "net.irisshaders.iris.gui.screen.ShaderPackScreen": true,
+    "io.github.xiaocihua.stacktonearbychests.compat.ModMenuApiImpl$1": true,
+    "org.anti_ad.mc.ipnext.gui.GUIDEEditorScreen": true
+  },
+  "hideBackground": {
+    "com.illusivesoulworks.diet.client.screen.DietScreen": true,
+    "net.minecraft.class_4895": true
+  }
+}

@@ -1,0 +1,33 @@
+
+[General]
+	#
+	############################################
+	#
+	#Default: false
+	#-------------------------------------------
+	"Boolean: Debug Mode" = false
+
+[Reputation]
+	#
+	############################################
+	#The amount of reputation the player losses when opening a chest in front of a villager
+	#-------------------------------------------
+	#Default: 5
+	#-------------------------------------------
+	"Reputation Loss For Opening Chest" = 5
+	#
+	############################################
+	#How far the chest has to be from a villagers home or work for it to count towards reputation loss
+	#-------------------------------------------
+	#Default: 10.0
+	#-------------------------------------------
+	#Range: 1.0 ~ 20.0
+	"Double: Distance From Home Or Work" = 10.0
+	#
+	############################################
+	#The amount of reputation the player needs to have before renaming a vilager with a nametag
+	#-------------------------------------------
+	#Default: 18
+	#-------------------------------------------
+	"Reputation Required To Rename" = 18
+

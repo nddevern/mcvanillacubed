@@ -1,0 +1,10 @@
+[general]
+minimumHealth = 2
+healthPerDeath = 2
+reducedHealthMessage = true
+healthSetting = "SEPARATE"
+[regen]
+regenHealth = false
+maxRegained = 20
+regenHealthMessage = true
+regenTargets = ["minecraft:ender_dragon,4,1", "minecraft:wither,2,1"]

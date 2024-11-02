@@ -1,0 +1,6 @@
+{
+	/* The default amount of backpack slots.
+	   Must be between 0 and 27 (both inclusive)
+	*/
+	"default_backpack_slot_amount": 0
+}
