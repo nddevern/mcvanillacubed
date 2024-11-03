@@ -227,6 +227,10 @@ mode = "fastest"
 			[light_sources.settings.entities.underground_jungle]
 				jungle_zombie = true
 
+			[light_sources.settings.entities.swampier_swamps]
+				dragonfly = true
+				swamp_gas = true
+
 		[light_sources.settings.block_entities]
 
 			[light_sources.settings.block_entities.minecraft]

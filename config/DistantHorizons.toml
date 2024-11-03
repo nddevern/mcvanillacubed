@@ -488,7 +488,7 @@ _version = 2
 			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores, 
 			# CPU performance may suffer if Distant Horizons has a lot to load or generate. 
 			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
-			numberOfWorldGenerationThreads = 3
+			numberOfWorldGenerationThreads = 1
 			#
 			# If this value is less than 1.0, it will be treated as a percentage 
 			# of time each thread can run before going idle. 
@@ -496,7 +496,7 @@ _version = 2
 			# This can be used to reduce CPU usage if the thread count 
 			# is already set to 1 for the given option, or more finely 
 			# tune CPU performance.
-			runTimeRatioForWorldGenerationThreads = "0.5"
+			runTimeRatioForWorldGenerationThreads = "0.1"
 			#
 			# How many threads should be used when reading/writing LOD data to/from disk? 
 			# 
@@ -508,7 +508,7 @@ _version = 2
 			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores, 
 			# CPU performance may suffer if Distant Horizons has a lot to load or generate. 
 			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
-			numberOfFileHandlerThreads = 3
+			numberOfFileHandlerThreads = 1
 			#
 			# If this value is less than 1.0, it will be treated as a percentage 
 			# of time each thread can run before going idle. 
@@ -516,7 +516,7 @@ _version = 2
 			# This can be used to reduce CPU usage if the thread count 
 			# is already set to 1 for the given option, or more finely 
 			# tune CPU performance.
-			runTimeRatioForFileHandlerThreads = "0.5"
+			runTimeRatioForFileHandlerThreads = "0.25"
 			#
 			# How many threads should be used when applying LOD updates? 
 			# An LOD update is the operation of down-sampling a high detail LOD 
@@ -535,7 +535,7 @@ _version = 2
 			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores, 
 			# CPU performance may suffer if Distant Horizons has a lot to load or generate. 
 			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
-			numberOfUpdatePropagatorThreads = 3
+			numberOfUpdatePropagatorThreads = 1
 			#
 			# If this value is less than 1.0, it will be treated as a percentage 
 			# of time each thread can run before going idle. 
@@ -543,7 +543,7 @@ _version = 2
 			# This can be used to reduce CPU usage if the thread count 
 			# is already set to 1 for the given option, or more finely 
 			# tune CPU performance.
-			runTimeRatioForUpdatePropagatorThreads = "0.25"
+			runTimeRatioForUpdatePropagatorThreads = "0.1"
 			#
 			# How many threads should be used when building LODs? 
 			# 
@@ -554,7 +554,7 @@ _version = 2
 			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores, 
 			# CPU performance may suffer if Distant Horizons has a lot to load or generate. 
 			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
-			numberOfLodBuilderThreads = 3
+			numberOfLodBuilderThreads = 1
 			#
 			# If this value is less than 1.0, it will be treated as a percentage 
 			# of time each thread can run before going idle. 
@@ -562,7 +562,7 @@ _version = 2
 			# This can be used to reduce CPU usage if the thread count 
 			# is already set to 1 for the given option, or more finely 
 			# tune CPU performance.
-			runTimeRatioForLodBuilderThreads = "0.25"
+			runTimeRatioForLodBuilderThreads = "0.1"
 			#
 			# Should only be disabled if deadlock occurs and LODs refuse to update. 
 			# This will cause CPU usage to drastically increase for the Lod Builder threads. 
