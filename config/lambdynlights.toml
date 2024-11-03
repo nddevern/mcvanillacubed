@@ -209,15 +209,20 @@ mode = "fastest"
 
 			[light_sources.settings.entities.yungscavebiomes]
 				ice_cube = true
+				sand_snapper = true
 
 			[light_sources.settings.entities.wilderwild]
 				crab = true
 				jellyfish = true
 				firefly = true
+				scorched = true
+				tumbleweed = true
 
 			[light_sources.settings.entities.variantsandventures]
 				gelid = true
 				verdant = true
+				murk = true
+				thicket = true
 
 			[light_sources.settings.entities.underground_jungle]
 				jungle_zombie = true

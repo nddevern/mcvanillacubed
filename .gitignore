@@ -35,3 +35,7 @@ modlist.html
 
 mmc-pack.json
 whitelist.json
+servers.dat
+servers.dat_old
+servers.essential.dat
+Distant_Horizons_server_data/Localhost/overworld/DistantHorizons.sqlite

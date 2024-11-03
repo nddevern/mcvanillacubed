@@ -1,12 +1,12 @@
 {
   "watchForChanges": true,
   "hud": {
-    "distance": 60,
-    "x": 4.0,
+    "distance": 80,
+    "x": -50.0,
     "y": 4.0,
-    "scale": 1.0,
+    "scale": 0.8,
     "hideDelay": 20,
-    "anchorPoint": "TOP_LEFT",
+    "anchorPoint": "TOP_RIGHT",
     "showEntity": true,
     "showBar": true,
     "showSkin": true,
@@ -20,10 +20,10 @@
     "foeColorSecondary": "#800000"
   },
   "inWorld": {
-    "mode": "NONE",
+    "mode": "ALWAYS",
     "distance": 60.0,
     "onlyWhenLookingAt": false,
-    "onlyWhenHurt": false
+    "onlyWhenHurt": true
   },
   "particle": {
     "show": true,
