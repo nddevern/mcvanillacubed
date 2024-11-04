@@ -11,6 +11,7 @@
 	renaming_supports_formatting = true
 	#Allow using iron blocks to repair an anvil by one damage stage. Can be automated using dispensers.
 	anvil_repairing = true
+
 #Most default value represents vanilla behavior.
 [costs]
 	#Multiplier for each level of a rare enchantment being applied.
@@ -41,6 +42,7 @@
 	#Renaming any item in an anvil no longer costs any enchantment levels at all. Can be restricted to only name tags.
 	#Allowed Values: OFF, ALL_ITEMS, NAME_TAGS_ONLY
 	free_renames = "ALL_ITEMS"
+
 [prior_work_penalty]
 	#FIXED: When renaming / repairing, ignore any prior work penalty on the item. Makes prior work penalty only relevant when new enchantments are added.
 	#LIMITED: When renaming / repairing cost exceeds max anvil repair cost, limit cost just below max cost.

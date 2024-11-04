@@ -1,4 +1,3 @@
-[renderers]
 	[renderers.inventory_renderer]
 		#Print menu type to game chat whenever a new menu screen is opened. Only intended to find menu types to be added to "menu_blacklist".
 		debug_container_types = false
@@ -44,6 +43,7 @@
 		widget_space_x = 1
 		#Prevent status effects with infinite duration from showing.
 		hide_infinite_effects = false
+
 	[renderers.gui_renderer]
 		#Screen side to render status effects on.
 		#Allowed Values: LEFT, RIGHT
@@ -82,7 +82,7 @@
 		widget_space_x = 1
 		#Prevent status effects with infinite duration from showing.
 		hide_infinite_effects = false
-[widgets]
+
 	[widgets.gui_compact]
 		#Should effect widgets have a blue or red border depening on if they are beneficial or not.
 		quality_border = false
@@ -109,6 +109,7 @@
 		hide_infinite_duration = false
 		#Display effect duration more compact, allows for always showing duration, even when it is very long.
 		compact_duration = false
+
 	[widgets.inventory_compact]
 		#Should effect widgets have a blue or red border depening on if they are beneficial or not.
 		quality_border = false
@@ -133,6 +134,7 @@
 		hide_infinite_duration = false
 		#Display effect duration more compact, allows for always showing duration, even when it is very long.
 		compact_duration = false
+
 	[widgets.gui_small]
 		#Should effect widgets have a blue or red border depening on if they are beneficial or not.
 		quality_border = false
@@ -157,6 +159,7 @@
 		duration_color = "GRAY"
 		#Hide infinite symbol shown for an effect duration that is too long to fit.
 		hide_infinite_duration = false
+
 	[widgets.inventory_full_size]
 		#Should effect widgets have a blue or red border depening on if they are beneficial or not.
 		quality_border = false

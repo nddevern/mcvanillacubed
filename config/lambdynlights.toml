@@ -231,6 +231,12 @@ mode = "fastest"
 				dragonfly = true
 				swamp_gas = true
 
+			[light_sources.settings.entities.levelz]
+				level_experience_orb = true
+
+			[light_sources.settings.entities.galosphere]
+				spectre = true
+
 		[light_sources.settings.block_entities]
 
 			[light_sources.settings.block_entities.minecraft]

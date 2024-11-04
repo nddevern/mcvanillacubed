@@ -30,11 +30,15 @@
     "net.irisshaders.iris.gui.screen.ShaderPackScreen": true,
     "io.github.xiaocihua.stacktonearbychests.compat.ModMenuApiImpl$1": true,
     "org.anti_ad.mc.ipnext.gui.GUIDEEditorScreen": true,
-    "vazkii.patchouli.client.book.gui.GuiBookLanding": true
+    "vazkii.patchouli.client.book.gui.GuiBookLanding": true,
+    "net.levelz.screen.SkillScreen": true,
+    "net.levelz.screen.SkillInfoScreen": true
   },
   "hideBackground": {
     "com.illusivesoulworks.diet.client.screen.DietScreen": true,
     "net.minecraft.class_4895": true,
-    "vazkii.patchouli.client.book.gui.GuiBookLanding": true
+    "vazkii.patchouli.client.book.gui.GuiBookLanding": true,
+    "net.levelz.screen.SkillScreen": true,
+    "net.levelz.screen.SkillInfoScreen": true
   }
 }
