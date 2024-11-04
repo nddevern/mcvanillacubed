@@ -16,7 +16,7 @@
 //example_block.png
 console.info('NoahTesta')
 
-setArmorSetProtection('minecraft', 'netherite', 3, 8, 6, 3)
+setArmorSetProtection('minecraft', 'netherite', 0, 0, 0, 0)
 setArmorSetToughness('minecraft', 'netherite', 5)
 //console.info('NoahTest2')
 
