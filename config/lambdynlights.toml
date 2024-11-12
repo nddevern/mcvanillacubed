@@ -237,6 +237,66 @@ mode = "fastest"
 			[light_sources.settings.entities.galosphere]
 				spectre = true
 
+			[light_sources.settings.entities.promenade]
+				duck = true
+				lush_creeper = true
+				capybara = true
+
+			[light_sources.settings.entities.hybrid-aquatic]
+				barrel_jellyfish = true
+				sea_cucumber = true
+				starfish = true
+				sea_urchin = true
+				crayfish = true
+				rockfish = true
+				anglerfish = true
+				ghost_crab = true
+				piranha = true
+				tetra = true
+				oscar = true
+				danio = true
+
+			[light_sources.settings.entities.spawn]
+				tuna = true
+				snail = true
+				ant = true
+
+			[light_sources.settings.entities.naturalist]
+				robin = true
+				boar = true
+				butterfly = true
+				snake = true
+				bluejay = true
+				snail = true
+				bass = true
+				cardinal = true
+				lizard = true
+				finch = true
+				bear = true
+				coral_snake = true
+				deer = true
+				duck = true
+				canary = true
+				sparrow = true
+				firefly = true
+
+			[light_sources.settings.entities.betternether]
+				hydrogen_jellyfish = true
+				firefly = true
+				naga = true
+				skull = true
+				flying_pig = true
+
+			[light_sources.settings.entities.netherdepthsupgrade]
+				searing_cod = true
+				fortressgrouper = true
+				bonefish = true
+				magmacubefish = true
+				soulsucker = true
+
+			[light_sources.settings.entities.nethersheep]
+				atre = true
+
 		[light_sources.settings.block_entities]
 
 			[light_sources.settings.block_entities.minecraft]

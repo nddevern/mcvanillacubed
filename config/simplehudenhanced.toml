@@ -4,7 +4,7 @@ toggleMovementStatus = false
 toggleEquipmentStatus = false
 
 [uiConfig]
-toggleSimpleHUDEnhanced = true
+toggleSimpleHUDEnhanced = false
 textColor = 16777215
 textBackground = false
 textScale = 100

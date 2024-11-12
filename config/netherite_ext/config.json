@@ -1,0 +1,26 @@
+{
+  "anvil": {
+    "xp_reduction": 0.5
+  },
+  "damage": {
+    "bow_damage_addition": 0.0,
+    "bow_damage_multiplier": 1.0,
+    "crossbow_damage_addition": 0.0,
+    "crossbow_damage_multiplier": 1.0,
+    "trident_damage_addition": 0.0,
+    "trident_damage_multiplier": 1.0,
+    "elytra_armor_points": 4
+  },
+  "durability": {
+    "bow": 768,
+    "crossbow": 562,
+    "elytra": 864,
+    "fishing_rod": 128,
+    "trident": 500,
+    "shears": 476,
+    "shield": 672
+  },
+  "graphics": {
+    "lava_vision_distance": 0.25
+  }
+}
