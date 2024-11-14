@@ -2,13 +2,36 @@
 
 // Visit the wiki for more info - https://kubejs.com/
 
-// TOOD: STERLING ARMOR,
+// TOOD:
 // - Sterling Aromr
 // - Oxidied copper armor?
 // - Refiend Diamond Armor (or should we just make netherit where diamond was and use mythic upgrades?)
 // - All recipies/progression
 // - Give rose gold armor innate fire/blast protection (and could give bronze projectile protection?)
 // - Remnant armor? And the other modded aromrs we have installed?
+// - Tool durabilities/speeds?
+// - reduce ore drop rates
+// - make torch crafting recipies give 8 torches
+// - add all deepslate blocks to server scripts list
+
+const MiningLevels = Object.freeze({
+    HAND: -1,
+    WOOD: 0,
+    STONE: 1,
+    IRON: 2,
+    DIAMOND: 3,
+    NETHERITE: 4
+});
+
+// lolmfv:blackstone_furnace
+StartupEvents.registry('block', event => {
+
+});
+
+setItemProperty(
+    getPrefix('minecraft', 'diamond') + 'pickaxe',
+    (x, y) => x.setTier(tier => {tier.level = MiningLevels.IRON})
+);
 
 configureArmor('minecraft', 'golden', 9, 385);
 configureArmor('progression_reborn', 'copper', 11, 400);
@@ -23,18 +46,24 @@ configureArmor('minecraft', 'netherite', 32, 2035);
 
 function configureArmor(namespace, material, prot, durability) {
     // The ratios hardcoded here are based on the vanilla game's average distributions
-    setArmorSetProperty(namespace,
+    setArmorSetProperty(
+        namespace,
         material,
         getArmorValues([15, 40, 31, 14], prot),
-        (x, y) => x.armorProtection = y);
-    setArmorSetProperty(namespace,
+        (x, y) => x.armorProtection = y
+    );
+    setArmorSetProperty(
+        namespace,
         material,
         [0, 0, 0, 0],
-        (x, y) => x.armorToughness = y);
-    setArmorSetProperty(namespace,
+        (x, y) => x.armorToughness = y
+    );
+    setArmorSetProperty(
+        namespace,
         material,
         getArmorValues([20, 29, 27, 24], durability),
-        (x, y) => x.maxDamage = y);
+        (x, y) => x.maxDamage = y
+    );
 }
 
 // all arrays go like: helm, chest, legs, boots
@@ -57,13 +86,13 @@ function getArmorValues(ratios, total) {
 //(x, y) => x.armorProtection = y
 function setArmorSetProperty(namespace, material, values, lambda) {
     var prefix = getPrefix(namespace, material);
-    setArmorProperty(prefix + 'helmet', (x) => lambda(x, values[0]));
-    setArmorProperty(prefix + 'chestplate', (x) => lambda(x, values[1]));
-    setArmorProperty(prefix + 'leggings', (x) => lambda(x, values[2]));
-    setArmorProperty(prefix + 'boots', (x) => lambda(x, values[3]));
+    setItemProperty(prefix + 'helmet', (x) => lambda(x, values[0]));
+    setItemProperty(prefix + 'chestplate', (x) => lambda(x, values[1]));
+    setItemProperty(prefix + 'leggings', (x) => lambda(x, values[2]));
+    setItemProperty(prefix + 'boots', (x) => lambda(x, values[3]));
 }
 
-function setArmorProperty(fullItemName, lambda) {
+function setItemProperty(fullItemName, lambda) {
     ItemEvents.modification(event => {
         event.modify(fullItemName, item => {
             lambda(item);

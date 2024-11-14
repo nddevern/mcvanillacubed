@@ -255,6 +255,15 @@ mode = "fastest"
 				tetra = true
 				oscar = true
 				danio = true
+				ratfish = true
+				dragonfish = true
+				dungeness_crab = true
+				barreleye = true
+				flower_crab = true
+				lightfoot_crab = true
+				carp = true
+				goldfish = true
+				discus = true
 
 			[light_sources.settings.entities.spawn]
 				tuna = true
@@ -296,6 +305,9 @@ mode = "fastest"
 
 			[light_sources.settings.entities.nethersheep]
 				atre = true
+
+			[light_sources.settings.entities.biomeswevegone]
+				man_o_war = true
 
 		[light_sources.settings.block_entities]
 

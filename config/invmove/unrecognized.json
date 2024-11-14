@@ -32,13 +32,18 @@
     "org.anti_ad.mc.ipnext.gui.GUIDEEditorScreen": true,
     "vazkii.patchouli.client.book.gui.GuiBookLanding": true,
     "net.levelz.screen.SkillScreen": true,
-    "net.levelz.screen.SkillInfoScreen": true
+    "net.levelz.screen.SkillInfoScreen": true,
+    "com.mod.melting.gui.screen.ingame.MelterScreen": true,
+    "org.betterx.bclib.client.gui.screens.SyncFilesScreen": true,
+    "dev.latvian.mods.kubejs.client.KubeJSErrorScreen": true,
+    "org.betterx.bclib.client.gui.modmenu.MainScreen": true
   },
   "hideBackground": {
     "com.illusivesoulworks.diet.client.screen.DietScreen": true,
     "net.minecraft.class_4895": true,
     "vazkii.patchouli.client.book.gui.GuiBookLanding": true,
     "net.levelz.screen.SkillScreen": true,
-    "net.levelz.screen.SkillInfoScreen": true
+    "net.levelz.screen.SkillInfoScreen": true,
+    "com.mod.melting.gui.screen.ingame.MelterScreen": true
   }
 }
