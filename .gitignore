@@ -6,6 +6,7 @@ instance.cfg
 .mixin.out/*
 .vscode/*
 local/kubejs/event_groups/*
+kubejs/probe/*
 
 #omitted world-specific config files
 config/litematica/*
