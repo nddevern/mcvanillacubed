@@ -1,0 +1,1 @@
+To run server, right click on ru.sh and click Run in Konsole 
