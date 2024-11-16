@@ -36,7 +36,8 @@
     "com.mod.melting.gui.screen.ingame.MelterScreen": true,
     "org.betterx.bclib.client.gui.screens.SyncFilesScreen": true,
     "dev.latvian.mods.kubejs.client.KubeJSErrorScreen": true,
-    "org.betterx.bclib.client.gui.modmenu.MainScreen": true
+    "org.betterx.bclib.client.gui.modmenu.MainScreen": true,
+    "team.creative.creativecore.common.gui.integration.ContainerScreenIntegration": true
   },
   "hideBackground": {
     "com.illusivesoulworks.diet.client.screen.DietScreen": true,

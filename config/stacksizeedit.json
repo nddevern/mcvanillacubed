@@ -1,5 +1,4 @@
 {
-  "enableMaxSize": true,
   "maxStacker": 999,
   "itemOverride": [
     "#c:not_stackable:1",

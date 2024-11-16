@@ -241,6 +241,7 @@ mode = "fastest"
 				duck = true
 				lush_creeper = true
 				capybara = true
+				sunken_skeleton = true
 
 			[light_sources.settings.entities.hybrid-aquatic]
 				barrel_jellyfish = true
@@ -264,11 +265,38 @@ mode = "fastest"
 				carp = true
 				goldfish = true
 				discus = true
+				fiddler_crab = true
+				betta = true
+				flashlight_fish = true
+				horseshoe_crab = true
+				tuna = true
+				opah = true
+				compass_jellyfish = true
+				sea_nettle = true
+				blue_jellyfish = true
+				mahi = true
+				spider_crab = true
+				oarfish = true
+				manta_ray = true
+				sunfish = true
+				stingray = true
+				triggerfish = true
+				moon_jellyfish = true
+				fried_egg_jellyfish = true
+				needlefish = true
+				cauliflower_jellyfish = true
+				toadfish = true
+				surgeonfish = true
+				mauve_stinger = true
+				firefly_squid = true
+				hammerhead_shark = true
 
 			[light_sources.settings.entities.spawn]
 				tuna = true
 				snail = true
 				ant = true
+				hamster = true
+				angler_fish = true
 
 			[light_sources.settings.entities.naturalist]
 				robin = true
@@ -288,6 +316,9 @@ mode = "fastest"
 				canary = true
 				sparrow = true
 				firefly = true
+				catfish = true
+				tortoise = true
+				dragonfly = true
 
 			[light_sources.settings.entities.betternether]
 				hydrogen_jellyfish = true
@@ -308,6 +339,9 @@ mode = "fastest"
 
 			[light_sources.settings.entities.biomeswevegone]
 				man_o_war = true
+
+			[light_sources.settings.entities.pescatore]
+				minigame_fishing_bobber = true
 
 		[light_sources.settings.block_entities]
 

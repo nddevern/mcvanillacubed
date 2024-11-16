@@ -1,4 +1,4 @@
 {
-  "dayDuration": 12000,
-  "nightDuration": 12000
+  "dayDuration": 30000,
+  "nightDuration": 24000
 }
