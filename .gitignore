@@ -8,7 +8,6 @@ instance.cfg
 local/kubejs/event_groups/*
 kubejs/probe/*
 libraries/*
-world/advancements/*
 
 #omitted world-specific config files
 config/litematica/*
