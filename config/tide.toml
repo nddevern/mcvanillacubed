@@ -10,4 +10,4 @@ defaultLineColor = false
 hideUnknownFishNames = true
 baseCrateRarity = 20
 [worldgen]
-disableFishingBoat = false
+disableFishingBoat = true
