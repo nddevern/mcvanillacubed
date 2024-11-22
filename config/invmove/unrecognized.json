@@ -37,7 +37,9 @@
     "org.betterx.bclib.client.gui.screens.SyncFilesScreen": true,
     "dev.latvian.mods.kubejs.client.KubeJSErrorScreen": true,
     "org.betterx.bclib.client.gui.modmenu.MainScreen": true,
-    "team.creative.creativecore.common.gui.integration.ContainerScreenIntegration": true
+    "team.creative.creativecore.common.gui.integration.ContainerScreenIntegration": true,
+    "com.jship.hauntfurnace.client.HauntFurnaceScreen": true,
+    "com.jship.hauntfurnace.client.PoweredHauntFurnaceScreen": true
   },
   "hideBackground": {
     "com.illusivesoulworks.diet.client.screen.DietScreen": true,
@@ -45,6 +47,8 @@
     "vazkii.patchouli.client.book.gui.GuiBookLanding": true,
     "net.levelz.screen.SkillScreen": true,
     "net.levelz.screen.SkillInfoScreen": true,
-    "com.mod.melting.gui.screen.ingame.MelterScreen": true
+    "com.mod.melting.gui.screen.ingame.MelterScreen": true,
+    "com.jship.hauntfurnace.client.HauntFurnaceScreen": true,
+    "com.jship.hauntfurnace.client.PoweredHauntFurnaceScreen": true
   }
 }

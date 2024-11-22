@@ -4,42 +4,42 @@
 
 ServerEvents.recipes(event => {
 
-    event.remove({ output: 'melting:melter' })
+    event.remove({ output: 'hauntfurnace:haunt_furnace' });
+    event.remove({ output: 'hauntfurnace:powered_haunt_furnace' });
     event.shaped(
-        Item.of('melting:melter', 1),
+        Item.of('hauntfurnace:haunt_furnace', 1),
         [
             'AAA',
             'ABA',
             'ACA'
         ],
         {
-            A: 'minecraft:obsidian',
-            B: 'minecraft:nether_wart',
-            C: 'minecraft:glowstone_dust'
+            A: 'minecraft:blackstone',
+            B: 'minecraft:blaze_powder',
+            C: 'minecraft:soul_campfire'
         }
     );
     event.shaped(
-        Item.of('melting:melter', 1),
+        Item.of('hauntfurnace:haunt_furnace', 1),
         [
             'AAA',
             'ACA',
             'ABA'
         ],
         {
-            A: 'minecraft:obsidian',
-            B: 'minecraft:nether_wart',
-            C: 'minecraft:glowstone_dust'
+            A: 'minecraft:blackstone',
+            B: 'minecraft:blaze_powder',
+            C: 'minecraft:soul_campfire'
         }
     );
 
-    event.remove({ output: 'beersteel:steel_ingot' })
+    event.remove({ output: 'beersteel:steel_ingot' });
     event.custom({
-        type: 'melting:melting',
-        category: 'blocks',
+        type: 'hauntfurnace:haunting',
         cookingtime: 200,
-        experience: 0.3,
         ingredient: { item: 'beersteel:crude_steel' },
-        result: 'beersteel:steel_ingot'
+        result: 'beersteel:steel_ingot',
+        experience: 0.3
     });
 });
 
