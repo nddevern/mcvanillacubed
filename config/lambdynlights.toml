@@ -197,12 +197,18 @@ mode = "fastest"
 				spawner_carrier = true
 				chaos_spawner = true
 				hollow = true
+				sealed_chaos = true
+				whimper = true
+				chaos_spawner_projectile = true
+				special_item_entity = true
+				great_experience_bottle = true
 
 			[light_sources.settings.entities.cozys-improved-wolves]
 				improved_wolf = true
 
 			[light_sources.settings.entities.geologicexpansion]
 				duck = true
+				duck_egg = true
 
 			[light_sources.settings.entities.lootr]
 				lootr_minecart = true
@@ -236,6 +242,16 @@ mode = "fastest"
 
 			[light_sources.settings.entities.galosphere]
 				spectre = true
+				silver_bomb = true
+				glow_flare = true
+				spectre_flare = true
+				sparkle = true
+				specterpillar = true
+				spectator_vision = true
+				berserker = true
+				preserved = true
+				pink_salt_pillar = true
+				pink_salt_shard = true
 
 			[light_sources.settings.entities.promenade]
 				duck = true
@@ -290,6 +306,21 @@ mode = "fastest"
 				mauve_stinger = true
 				firefly_squid = true
 				hammerhead_shark = true
+				parrotfish = true
+				clownfish = true
+				cowfish = true
+				tiger_shark = true
+				giant_isopod = true
+				bull_shark = true
+				hermit_crab = true
+				coconut_crab = true
+				glowing_sucker_octopus = true
+				umbrella_octopus = true
+				great_white_shark = true
+				atolla_jellyfish = true
+				whale_shark = true
+				thresher_shark = true
+				nautilus = true
 
 			[light_sources.settings.entities.spawn]
 				tuna = true
@@ -326,6 +357,8 @@ mode = "fastest"
 				naga = true
 				skull = true
 				flying_pig = true
+				jungle_skeleton = true
+				naga_projectile = true
 
 			[light_sources.settings.entities.netherdepthsupgrade]
 				searing_cod = true
@@ -333,15 +366,77 @@ mode = "fastest"
 				bonefish = true
 				magmacubefish = true
 				soulsucker = true
+				wither_bonefish = true
+				lava_pufferfish = true
 
 			[light_sources.settings.entities.nethersheep]
 				atre = true
 
 			[light_sources.settings.entities.biomeswevegone]
 				man_o_war = true
+				pumpkin_warden = true
+				oddion = true
+				boat = true
+				chest_boat = true
 
 			[light_sources.settings.entities.pescatore]
 				minigame_fishing_bobber = true
+
+			[light_sources.settings.entities.bclib]
+				chair = true
+
+			[light_sources.settings.entities.betterarcheology]
+				bombentity = true
+
+			[light_sources.settings.entities.betterend]
+				dragonfly = true
+				end_slime = true
+				end_fish = true
+				shadow_walker = true
+				cubozoa = true
+				silk_moth = true
+
+			[light_sources.settings.entities.bygonenether]
+				wex = true
+				warped_enderman = true
+				piglin_prisoner = true
+				piglin_hunter = true
+				wraither = true
+				wither_skeleton_knight = true
+				corpor = true
+				wither_skeleton_horse = true
+				warped_ender_pearl = true
+
+			[light_sources.settings.entities.copperhopper]
+				copper_hopper_minecart = true
+
+			[light_sources.settings.entities.dawn]
+				flying_block = true
+				custom_tnt = true
+
+			[light_sources.settings.entities.deeperdarker]
+				boat = true
+				chest_boat = true
+				angler_fish = true
+				sculk_centipede = true
+				sculk_leech = true
+				sculk_snapper = true
+				shattered = true
+				shriek_worm = true
+				sludge = true
+				stalker = true
+
+			[light_sources.settings.entities.farmersdelight]
+				rotten_tomato = true
+
+			[light_sources.settings.entities.tide]
+				trout = true
+				pike = true
+				bluegill = true
+				fishing_bobber = true
+				catfish = true
+				mint_carp = true
+				yellow_perch = true
 
 		[light_sources.settings.block_entities]
 

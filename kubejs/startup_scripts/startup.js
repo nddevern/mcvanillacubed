@@ -2,18 +2,6 @@
 
 // Visit the wiki for more info - https://kubejs.com/
 
-// TOOD:
-// - Sterling Aromr
-// - Oxidied copper armor?
-// - Refiend Diamond Armor (or should we just make netherit where diamond was and use mythic upgrades?)
-// - All recipies/progression
-// - Give rose gold armor innate fire/blast protection (and could give bronze projectile protection?)
-// - Remnant armor? And the other modded aromrs we have installed?
-// - Tool durabilities/speeds?
-// - reduce ore drop rates
-// - make torch crafting recipies give 8 torches
-// - add all deepslate blocks to server scripts list
-
 const MiningLevels = Object.freeze({
     HAND: -1,
     WOOD: 0,
@@ -33,16 +21,17 @@ setItemProperty(
     (x, y) => x.setTier(tier => {tier.level = MiningLevels.IRON})
 );
 
-configureArmor('minecraft', 'golden', 9, 385);
-configureArmor('progression_reborn', 'copper', 11, 400);
-configureArmor('minecraft', 'chainmail', 13, 825);
-configureArmor('minecraft', 'iron', 15, 450);
-configureArmor('progression_reborn', 'rose', 16, 1100);
-configureArmor('bronze', 'bronze', 20, 825);
-configureArmor('minecraft', 'diamond', 20, 1000);
-configureArmor('beersteel', 'steel', 24, 1400);
-configureArmor('x', 'refined_diamond', 28, 1815); // TODO
-configureArmor('minecraft', 'netherite', 32, 2035);
+//             namespace             armor            prot  durability
+configureArmor('minecraft',          'golden',          9,  385);
+configureArmor('progression_reborn', 'copper',          11, 400);
+configureArmor('minecraft',          'chainmail',       13, 825);
+configureArmor('minecraft',          'iron',            15, 450);
+configureArmor('progression_reborn', 'rose',            16, 1100);
+configureArmor('bronze',             'bronze',          20, 825);
+configureArmor('minecraft',          'diamond',         20, 1000);
+configureArmor('beersteel',          'steel',           30, 1400);
+configureArmor('x',                  'refined_diamond', 36, 1815); // TODO
+configureArmor('minecraft',          'netherite',       40, 2035);
 
 function configureArmor(namespace, material, prot, durability) {
     // The ratios hardcoded here are based on the vanilla game's average distributions
