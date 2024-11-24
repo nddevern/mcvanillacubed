@@ -1,0 +1,25 @@
+{
+  "skyConfigData": {
+    "color": 16711680,
+    "displaySwitch": false
+  },
+  "fogConfigData": {
+    "color": 4772300,
+    "displaySwitch": false
+  },
+  "waterConfigData": {
+    "color": 4772300,
+    "displaySwitch": false
+  },
+  "waterFogConfigData": {
+    "color": 4772300,
+    "displaySwitch": false
+  },
+  "blockOutlineConfigData": {
+    "red": 0,
+    "green": 0,
+    "blue": 0,
+    "alpha": 102,
+    "displaySwitch": false
+  }
+}

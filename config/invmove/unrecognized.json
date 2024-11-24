@@ -40,7 +40,9 @@
     "team.creative.creativecore.common.gui.integration.ContainerScreenIntegration": true,
     "com.jship.hauntfurnace.client.HauntFurnaceScreen": true,
     "com.jship.hauntfurnace.client.PoweredHauntFurnaceScreen": true,
-    "mezz.jei.gui.recipes.RecipesGui": true
+    "mezz.jei.gui.recipes.RecipesGui": true,
+    "net.mehvahdjukaar.sawmill.SawmillScreen": true,
+    "net.kikoz.mcwfurnitures.storage.FurnitureScreen": true
   },
   "hideBackground": {
     "com.illusivesoulworks.diet.client.screen.DietScreen": true,
@@ -51,6 +53,8 @@
     "com.mod.melting.gui.screen.ingame.MelterScreen": true,
     "com.jship.hauntfurnace.client.HauntFurnaceScreen": true,
     "com.jship.hauntfurnace.client.PoweredHauntFurnaceScreen": true,
-    "mezz.jei.gui.recipes.RecipesGui": true
+    "mezz.jei.gui.recipes.RecipesGui": true,
+    "net.mehvahdjukaar.sawmill.SawmillScreen": true,
+    "net.kikoz.mcwfurnitures.storage.FurnitureScreen": true
   }
 }
