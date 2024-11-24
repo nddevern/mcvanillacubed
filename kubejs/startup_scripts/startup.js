@@ -21,6 +21,11 @@ setItemProperty(
     (x, y) => x.setTier(tier => {tier.level = MiningLevels.IRON})
 );
 
+setItemProperty(
+    getPrefix('beersteel', 'steel') + 'sword',
+    (x, y) => x.attackDamage = 8.0
+);
+
 //             namespace             armor            prot  durability
 configureArmor('minecraft',          'golden',          9,  385);
 configureArmor('progression_reborn', 'copper',          11, 400);
