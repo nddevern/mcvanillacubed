@@ -39,7 +39,8 @@
     "org.betterx.bclib.client.gui.modmenu.MainScreen": true,
     "team.creative.creativecore.common.gui.integration.ContainerScreenIntegration": true,
     "com.jship.hauntfurnace.client.HauntFurnaceScreen": true,
-    "com.jship.hauntfurnace.client.PoweredHauntFurnaceScreen": true
+    "com.jship.hauntfurnace.client.PoweredHauntFurnaceScreen": true,
+    "mezz.jei.gui.recipes.RecipesGui": true
   },
   "hideBackground": {
     "com.illusivesoulworks.diet.client.screen.DietScreen": true,
@@ -49,6 +50,7 @@
     "net.levelz.screen.SkillInfoScreen": true,
     "com.mod.melting.gui.screen.ingame.MelterScreen": true,
     "com.jship.hauntfurnace.client.HauntFurnaceScreen": true,
-    "com.jship.hauntfurnace.client.PoweredHauntFurnaceScreen": true
+    "com.jship.hauntfurnace.client.PoweredHauntFurnaceScreen": true,
+    "mezz.jei.gui.recipes.RecipesGui": true
   }
 }
