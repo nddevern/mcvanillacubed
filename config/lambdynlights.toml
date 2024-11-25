@@ -437,6 +437,12 @@ mode = "fastest"
 				catfish = true
 				mint_carp = true
 				yellow_perch = true
+				mackerel = true
+				ocean_perch = true
+				barracuda = true
+				bass = true
+				sailfish = true
+				tuna = true
 
 		[light_sources.settings.block_entities]
 

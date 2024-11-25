@@ -45,10 +45,45 @@ ServerEvents.recipes(event => {
     event.shapeless(Item.of('bronze:bronze_blend'), ['3x minecraft:copper_ingot', 'bronze:tin_ingot'])
     event.shapeless(Item.of('bronze:bronze_blend'), ['3x minecraft:raw_copper',   'bronze:tin_ingot'])
     event.shapeless(Item.of('bronze:bronze_blend'), ['3x minecraft:copper_ingot', 'bronze:raw_tin'])
+
+    event.custom({
+        "type": "lychee:anvil_crafting",
+        "item_in": [
+            {
+                "item": "bow",
+                "lychee:tag": {
+                    "Damage": 1
+                }
+            },
+            {
+                "item": "string"
+            }
+        ],
+        "item_out": {
+            "item": "bow"
+        },
+        "assembling": [
+            {
+                "type": "nbt_patch",
+                "op": "copy",
+                "from": "/item_in/0/tag",
+                "path": "/item_out/tag"
+            },
+            {
+                "type": "custom",
+                "id": "repair_item",
+                "target": "/item_out",
+                "durability": 128
+            }
+        ],
+        "contextual": {
+            "type": "custom",
+            "id": "is_item_damaged",
+            "target": "/item_in/0"
+        }
+    });
+
 });
-
-
-
 
 const obsidianBlocks = [
     'minecraft:obsidian'
