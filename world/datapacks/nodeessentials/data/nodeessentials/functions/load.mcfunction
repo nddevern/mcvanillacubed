@@ -22,7 +22,7 @@ scoreboard objectives add nodeessentials.player_id dummy
 execute unless score NODEESSENTIALS_HIGHEST_PLAYER_ID nodeessentials.player_id matches 0.. run scoreboard players set NODEESSENTIALS_HIGHEST_PLAYER_ID nodeessentials.player_id 0
 
 # VanillaCubed
-gamerule keepInventory true
+gamerule keepInventory false
 scoreboard objectives add DayTime dummy
 # End VanillaCubed
 
