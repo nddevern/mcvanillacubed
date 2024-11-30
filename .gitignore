@@ -50,7 +50,8 @@ Distant_Horizons_server_data/LadyAlthea/overworld/DistantHorizons.sqlite
 fabric-server-mc.1.20.1-loader.0.16.7-launcher.1.0.1.jar
 rhino.local.properties
 versions/1.20.1/server-1.20.1.jar
-world/*
+world - Copy
+world - Copy/*
 config/spark/activity.json
 Distant_Horizons_server_data/Localhost/the_nether/DistantHorizons.sqlite
 config/spark/activity.json
