@@ -728,7 +728,7 @@
     "tweakF3Cursor": false,
     "tweakFakeSneaking": false,
     "tweakFakeSneakPlacement": false,
-    "tweakFastBlockPlacement": true,
+    "tweakFastBlockPlacement": false,
     "tweakFastLeftClick": false,
     "tweakFastRightClick": false,
     "tweakFillCloneLimit": false,
@@ -757,7 +757,7 @@
     "tweakPermanentSprint": false,
     "tweakPlacementGrid": false,
     "tweakPlacementLimit": false,
-    "tweakPlacementRestriction": true,
+    "tweakPlacementRestriction": false,
     "tweakPlacementRestrictionFirst": false,
     "tweakPlacementRestrictionHand": false,
     "tweakPlayerInventoryPeek": false,
@@ -1005,7 +1005,7 @@
       "keys": ""
     },
     "tweakToolSwitch": {
-      "keys": ""
+      "keys": "H"
     },
     "tweakWeaponSwitch": {
       "keys": ""

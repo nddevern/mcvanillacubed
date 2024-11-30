@@ -44,7 +44,8 @@
     "net.mehvahdjukaar.sawmill.SawmillScreen": true,
     "net.kikoz.mcwfurnitures.storage.FurnitureScreen": true,
     "fi.dy.masa.tweakeroo.gui.GuiConfigs": true,
-    "fi.dy.masa.malilib.gui.GuiKeybindSettings": true
+    "fi.dy.masa.malilib.gui.GuiKeybindSettings": true,
+    "com.li64.tide.client.gui.screens.AnglerWorkshopScreen": true
   },
   "hideBackground": {
     "com.illusivesoulworks.diet.client.screen.DietScreen": true,
@@ -57,6 +58,7 @@
     "com.jship.hauntfurnace.client.PoweredHauntFurnaceScreen": true,
     "mezz.jei.gui.recipes.RecipesGui": true,
     "net.mehvahdjukaar.sawmill.SawmillScreen": true,
-    "net.kikoz.mcwfurnitures.storage.FurnitureScreen": true
+    "net.kikoz.mcwfurnitures.storage.FurnitureScreen": true,
+    "com.li64.tide.client.gui.screens.AnglerWorkshopScreen": true
   }
 }

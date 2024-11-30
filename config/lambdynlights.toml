@@ -232,6 +232,7 @@ mode = "fastest"
 
 			[light_sources.settings.entities.underground_jungle]
 				jungle_zombie = true
+				mossy_skeleton = true
 
 			[light_sources.settings.entities.swampier_swamps]
 				dragonfly = true
@@ -350,6 +351,8 @@ mode = "fastest"
 				catfish = true
 				tortoise = true
 				dragonfly = true
+				giraffe = true
+				lizard_tail = true
 
 			[light_sources.settings.entities.betternether]
 				hydrogen_jellyfish = true
@@ -443,6 +446,10 @@ mode = "fastest"
 				bass = true
 				sailfish = true
 				tuna = true
+				guppy = true
+
+			[light_sources.settings.entities.paradise_lost]
+				envoy = true
 
 		[light_sources.settings.block_entities]
 
