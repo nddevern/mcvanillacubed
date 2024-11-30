@@ -26,5 +26,8 @@ execute as @a run function nodeessentials:handle_journal
 # VanillaCubed
 function nodeessentials:handle_vanillacubed
 
+execute unless entity @a run gamerule doDaylightCycle false
+execute if entity @a run gamerule doDaylightCycle true
+
 # THIS SHOULD RUN LAST
 execute as @a run function nodeessentials:handle_changelog
