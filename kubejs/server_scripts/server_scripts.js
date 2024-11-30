@@ -33,19 +33,65 @@ ServerEvents.recipes(event => {
         }
     );
 
+    // Steel
     event.remove({ output: 'beersteel:steel_ingot' });
     event.custom({
         type: 'hauntfurnace:haunting',
         cookingtime: 200,
         ingredient: { item: 'beersteel:crude_steel' },
         result: 'beersteel:steel_ingot',
-        experience: 0.3
+        experience: 0.4
     });
+    event.shapeless(Item.of('beersteel:steel_ingot'), ['9x beersteel:steel_nugget'])
+    event.shapeless(Item.of('9x beersteel:steel_ingot'), ['beersteel:steel_block'])
 
+    // Rose gold
+    //   Rose Ingot
+    event.remove({ output: 'progression_reborn:rose_ingot' });
+    event.custom({
+        type: 'hauntfurnace:haunting',
+        cookingtime: 100,
+        ingredient: { item: 'progression_reborn:raw_rose' },
+        result: 'progression_reborn:rose_ingot',
+        experience: 0.2
+    });
+    event.shapeless(Item.of('progression_reborn:rose_ingot'), ['9x progression_reborn:rose_nugget'])
+    event.shapeless(Item.of('9x progression_reborn:rose_ingot'), ['progression_reborn:rose_block'])
+
+    //   Rose Block
+    event.remove({ output: 'progression_reborn:rose_block' });
+    event.custom({
+        type: 'hauntfurnace:haunting',
+        cookingtime: 900,
+        ingredient: { item: 'progression_reborn:raw_rose_block' },
+        result: 'progression_reborn:rose_block',
+        experience: 1.8
+    });
+    event.shapeless(Item.of('progression_reborn:rose_block'), ['9x progression_reborn:rose_ingot'])
+
+    //   Rose Nugget
+    event.remove({ output: 'progression_reborn:rose_nugget' });
+    event.custom({
+        type: 'hauntfurnace:haunting',
+        cookingtime: 12,
+        ingredient: { item: 'progression_reborn:raw_rose_nugget' },
+        result: 'progression_reborn:rose_nugget',
+        experience: 0.02
+    });
+    event.shapeless(Item.of('9x progression_reborn:rose_nugget'), ['progression_reborn:rose_ingot'])
+
+    //   Raw Rose
+    event.shapeless(Item.of('progression_reborn:raw_rose'), ['3x minecraft:gold_ingot', 'minecraft:copper_ingot'])
+    event.shapeless(Item.of('progression_reborn:raw_rose'), ['3x minecraft:raw_gold', 'minecraft:raw_copper'])
+    event.shapeless(Item.of('progression_reborn:raw_rose'), ['3x minecraft:gold_ingot', 'minecraft:raw_copper'])
+    event.shapeless(Item.of('progression_reborn:raw_rose'), ['3x minecraft:raw_gold', 'minecraft:copper_ingot'])
+
+    // Bronze
     event.shapeless(Item.of('bronze:bronze_blend'), ['3x minecraft:copper_ingot', 'bronze:tin_ingot'])
     event.shapeless(Item.of('bronze:bronze_blend'), ['3x minecraft:raw_copper',   'bronze:tin_ingot'])
     event.shapeless(Item.of('bronze:bronze_blend'), ['3x minecraft:copper_ingot', 'bronze:raw_tin'])
 
+    // Bow repair
     event.custom({
         "type": "lychee:anvil_crafting",
         "item_in": [
