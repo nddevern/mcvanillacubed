@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_melon_slice": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:melon_slice"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_melon_slice"
+    }
+}

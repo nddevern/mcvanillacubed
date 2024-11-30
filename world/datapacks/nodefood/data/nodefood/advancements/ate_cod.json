@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_cod": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:cod"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_cod"
+    }
+}

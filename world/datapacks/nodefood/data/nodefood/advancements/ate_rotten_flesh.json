@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_rotten_flesh": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:rotten_flesh"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_rotten_flesh"
+    }
+}

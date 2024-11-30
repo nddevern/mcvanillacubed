@@ -1,0 +1,2 @@
+function nodefood:food_effect_regen_2_health_slow
+function nodefood:clear_food_eaten_flags

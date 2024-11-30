@@ -1,0 +1,1 @@
+function nodefood:clear_food_eaten_flags

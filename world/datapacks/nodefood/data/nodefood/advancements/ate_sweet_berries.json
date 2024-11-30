@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_sweet_berries": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:sweet_berries"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_sweet_berries"
+    }
+}

@@ -1,0 +1,2 @@
+function nodefood:food_effect_ate_raw_food
+function nodefood:clear_food_eaten_flags

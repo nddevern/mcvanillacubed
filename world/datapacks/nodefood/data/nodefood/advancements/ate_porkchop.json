@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_porkchop": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:porkchop"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_porkchop"
+    }
+}

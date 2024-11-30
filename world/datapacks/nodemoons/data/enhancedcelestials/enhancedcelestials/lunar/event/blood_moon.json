@@ -1,0 +1,83 @@
+{
+    "client_settings": {
+        "color_settings": {
+            "moon_texture_color": "DD0000",
+            "sky_light_color": "660000"
+        },
+        "moon_size": 40.0,
+        "moon_texture_location": "minecraft:textures/environment/moon_phases.png"
+    },
+    "dimension_chances": {
+        "minecraft:overworld": {
+            "chance": 0.4,
+            "min_number_of_nights_between": 2,
+            "valid_moon_phases": [ 0, 1, 2, 3, 5, 6, 7 ]
+        }
+    },
+    "drops": {
+        "drop_enhancer": {}
+    },
+    "mob_settings": {
+        "blocks_sleeping": {
+            "type": "corgilib:any"
+        },
+        "lunar_spawn_settings": {
+            "force_surface_spawning": true,
+            "mob_spawn_settings": {
+                "spawn_costs": {},
+                "spawners": {
+                    "ambient": [],
+                    "axolotls": [],
+                    "creature": [],
+                    "misc": [],
+                    "monster": [
+                        { "type": "minecraft:wither_skeleton",           "weight": 400,  "minCount": 1, "maxCount": 1 },
+                        { "type": "bygonenether:wither_skeleton_knight", "weight": 100,  "minCount": 1, "maxCount": 1 },
+                        { "type": "minecraft:zombified_piglin",          "weight": 1600, "minCount": 1, "maxCount": 1 },
+                        { "type": "minecraft:piglin",                    "weight": 1600, "minCount": 1, "maxCount": 1 },
+                        { "type": "minecraft:hoglin",                    "weight": 120,  "minCount": 1, "maxCount": 1 },
+                        { "type": "minecraft:zoglin",                    "weight": 120,  "minCount": 1, "maxCount": 1 },
+                        { "type": "minecraft:piglin_brute",              "weight": 200,  "minCount": 1, "maxCount": 1 },
+                        { "type": "bygonenether:piglin_hunter",          "weight": 100,  "minCount": 1, "maxCount": 1 },
+                        { "type": "minecraft:magma_cube",                "weight": 100,  "minCount": 1, "maxCount": 1 }
+                    ],
+                    "underground_water_creature": [],
+                    "water_ambient": [],
+                    "water_creature": []
+                }
+            },
+            "slimes_spawn_everywhere": false,
+            "use_biome_spawn_settings": true
+        },
+        "mob_effects": [],
+        "spawn_category_multiplier": {
+            "monster": 4
+        }
+    },
+    "text_components": {
+        "end_notification": {
+            "type": "CHAT",
+            "component": {
+                "key": "enhancedcelestials.notification.blood_moon.set",
+                "style": {
+                    "color": "ff5555"
+                }
+            }
+        },
+        "name": {
+            "key": "enhancedcelestials.name.blood_moon",
+            "style": {
+                "color": "ff5555"
+            }
+        },
+        "start_notification": {
+            "type": "CHAT",
+            "component": {
+                "key": "enhancedcelestials.notification.blood_moon.rise",
+                "style": {
+                    "color": "ff5555"
+                }
+            }
+        }
+    }
+}

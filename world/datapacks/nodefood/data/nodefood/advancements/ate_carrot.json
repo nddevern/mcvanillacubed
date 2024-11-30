@@ -1,0 +1,17 @@
+{
+  "criteria": {
+      "ate_carrot": {
+          "trigger": "minecraft:consume_item",
+          "conditions": {
+              "item": {
+                  "items": [
+                      "minecraft:carrot"
+                  ]
+              }
+          }
+      }
+  },
+  "rewards": {
+      "function": "nodefood:ate_carrot"
+  }
+}

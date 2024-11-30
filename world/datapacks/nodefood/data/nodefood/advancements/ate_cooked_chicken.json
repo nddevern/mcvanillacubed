@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_cooked_chicken": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:cooked_chicken"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_cooked_chicken"
+    }
+}

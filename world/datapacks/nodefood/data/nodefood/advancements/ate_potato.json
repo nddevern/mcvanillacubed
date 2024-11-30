@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_potato": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:potato"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_potato"
+    }
+}

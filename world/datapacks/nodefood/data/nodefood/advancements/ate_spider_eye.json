@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_spider_eye": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:spider_eye"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_spider_eye"
+    }
+}

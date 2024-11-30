@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_golden_carrot": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:golden_carrot"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_golden_carrot"
+    }
+}

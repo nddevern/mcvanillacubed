@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_cooked_mutton": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:cooked_mutton"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_cooked_mutton"
+    }
+}

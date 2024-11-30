@@ -1,0 +1,11 @@
+{
+    "type": "spoiled:spoil_recipe",
+    "ingredient": {
+      "item": "minecraft:wheat"
+    },
+    "spoiltime": 40,
+    "priority": 5,
+    "result": {
+      "id": "minecraft:rotten_flesh"
+    }
+  }

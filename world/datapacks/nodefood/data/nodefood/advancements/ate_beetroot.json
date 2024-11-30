@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_beetroot": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:beetroot"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_beetroot"
+    }
+}

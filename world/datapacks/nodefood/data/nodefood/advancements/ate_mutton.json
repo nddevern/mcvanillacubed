@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_mutton": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:mutton"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_mutton"
+    }
+}

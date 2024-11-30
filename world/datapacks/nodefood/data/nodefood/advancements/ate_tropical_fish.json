@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_tropical_fish": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:tropical_fish"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_tropical_fish"
+    }
+}

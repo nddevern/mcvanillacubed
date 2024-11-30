@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_dried_kelp": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:dried_kelp"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_dried_kelp"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_cookie": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:cookie"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_cookie"
+    }
+}

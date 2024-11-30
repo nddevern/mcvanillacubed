@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_mushroom_stew": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:mushroom_stew"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_mushroom_stew"
+    }
+}

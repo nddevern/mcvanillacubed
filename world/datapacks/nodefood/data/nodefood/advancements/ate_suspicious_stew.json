@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_suspicious_stew": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:suspicious_stew"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_suspicious_stew"
+    }
+}

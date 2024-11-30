@@ -1,0 +1,1 @@
+tellraw @a {"text": "Node-Loot loaded.", "color": "white"}

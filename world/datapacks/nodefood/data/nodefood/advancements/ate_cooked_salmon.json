@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_cooked_salmon": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:cooked_salmon"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_cooked_salmon"
+    }
+}

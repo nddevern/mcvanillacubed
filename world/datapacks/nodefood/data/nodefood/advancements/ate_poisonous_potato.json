@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_poisonous_potato": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:poisonous_potato"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_poisonous_potato"
+    }
+}

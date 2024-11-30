@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_cooked_beef": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:cooked_beef"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_cooked_beef"
+    }
+}

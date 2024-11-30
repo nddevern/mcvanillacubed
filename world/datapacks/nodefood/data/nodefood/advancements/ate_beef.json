@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_beef": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:beef"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_beef"
+    }
+}

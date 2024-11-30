@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ate_rabbit_stew": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:rabbit_stew"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nodefood:ate_rabbit_stew"
+    }
+}
