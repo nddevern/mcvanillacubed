@@ -356,6 +356,8 @@ mode = "fastest"
 				vulture = true
 				rattlesnake = true
 				rhino = true
+				hippo = true
+				zebra = true
 
 			[light_sources.settings.entities.betternether]
 				hydrogen_jellyfish = true
@@ -451,9 +453,13 @@ mode = "fastest"
 				sailfish = true
 				tuna = true
 				guppy = true
+				clayfish = true
 
 			[light_sources.settings.entities.paradise_lost]
 				envoy = true
+
+			[light_sources.settings.entities.shield_overhaul]
+				shield_bash_entity = true
 
 		[light_sources.settings.block_entities]
 
