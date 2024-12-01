@@ -4,12 +4,12 @@
     "debugDisplay": false
   },
   "movement": {
-    "enable": true,
+    "enable": false,
     "jump": true,
     "sneak": "Maintain",
     "dismount": false,
     "textFieldDisables": true,
-    "unrecognizedScreenDefault": true
+    "unrecognizedScreenDefault": false
   },
   "background": {
     "enable": true,

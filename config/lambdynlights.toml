@@ -355,6 +355,7 @@ mode = "fastest"
 				lizard_tail = true
 				vulture = true
 				rattlesnake = true
+				rhino = true
 
 			[light_sources.settings.entities.betternether]
 				hydrogen_jellyfish = true
