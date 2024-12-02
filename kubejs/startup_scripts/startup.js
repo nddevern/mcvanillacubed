@@ -38,6 +38,7 @@ configureArmor('beersteel',          'steel',           30, 1400);
 configureArmor('x',                  'refined_diamond', 36, 1815); // TODO
 configureArmor('minecraft',          'netherite',       40, 2035);
 
+// This section is needed to create custom anvil recipies in server_scripts
 LycheeEvents.customAction('repair_item', event => {
     let durability = event.data.durability
     event.action.applyFunc = (recipe, ctx, times) => {
@@ -58,6 +59,7 @@ LycheeEvents.customCondition('is_item_damaged', event => {
         return ctx.getItem(indexes.get(0)).damaged ? times : 0
     }
 })
+//////////////////////////////////////////////////////////////////////////
 
 function configureArmor(namespace, material, prot, durability) {
     // The ratios hardcoded here are based on the vanilla game's average distributions
