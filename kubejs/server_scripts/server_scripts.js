@@ -86,6 +86,47 @@ ServerEvents.recipes(event => {
     event.shapeless(Item.of('progression_reborn:raw_rose'), ['3x minecraft:gold_ingot', 'minecraft:raw_copper'])
     event.shapeless(Item.of('progression_reborn:raw_rose'), ['3x minecraft:raw_gold', 'minecraft:copper_ingot'])
 
+    //   Rose Armor
+    event.replaceOutput(
+        { id: 'progression_reborn:rose_helmet' },
+        'progression_reborn:rose_helmet',
+        Item.of('progression_reborn:rose_helmet', {Damage:0,Enchantments:[{id:"minecraft:fire_protection",lvl:2},{id:"minecraft:blast_protection",lvl:2}]})
+    );
+    event.replaceOutput(
+        { id: 'progression_reborn:rose_chestplate' },
+        'progression_reborn:rose_chestplate',
+        Item.of('progression_reborn:rose_chestplate', {Damage:0,Enchantments:[{id:"minecraft:fire_protection",lvl:2},{id:"minecraft:blast_protection",lvl:2}]})
+    );
+    event.replaceOutput(
+        { id: 'progression_reborn:rose_leggings' },
+        'progression_reborn:rose_leggings',
+        Item.of('progression_reborn:rose_leggings', {Damage:0,Enchantments:[{id:"minecraft:fire_protection",lvl:2},{id:"minecraft:blast_protection",lvl:2}]})
+    );
+    event.replaceOutput(
+        { id: 'progression_reborn:rose_boots' },
+        'progression_reborn:rose_boots',
+        Item.of('progression_reborn:rose_boots', {Damage:0,Enchantments:[{id:"minecraft:fire_protection",lvl:2},{id:"minecraft:blast_protection",lvl:2}]})
+    );
+
+    //   Rose Tools
+    event.replaceOutput(
+        { id: 'progression_reborn:rose_sword' },
+        'progression_reborn:rose_sword',
+        Item.of('progression_reborn:rose_sword', {Damage:0,Enchantments:[{id:"minecraft:fire_aspect",lvl:1}]})
+    );
+    event.shaped(
+        Item.of('progression_reborn:rose_shovel', 1),
+        [
+            'R',
+            'S',
+            'S'
+        ],
+        {
+            R: 'progression_reborn:rose_ingot',
+            S: 'minecraft:stick'
+        }
+    );
+
     // Bronze
     event.shapeless(Item.of('bronze:bronze_blend'), ['3x minecraft:copper_ingot', 'bronze:tin_ingot'])
     event.shapeless(Item.of('bronze:bronze_blend'), ['3x minecraft:raw_copper',   'bronze:tin_ingot'])
