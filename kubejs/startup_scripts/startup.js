@@ -21,24 +21,19 @@ setItemProperty(
     (x, y) => x.setTier(tier => {tier.level = MiningLevels.IRON})
 );
 
-setItemProperty(
-    getPrefix('beersteel', 'steel') + 'sword',
-    (x, y) => x.attackDamage = 8.0
-);
+//                 namespace,            material,         prot, durabilityMultiplier, swordDamage
+configureMaterial('minecraft',          'golden',          9,    1.00,                 4.0);
+configureMaterial('progression_reborn', 'copper',          11,   0.66,                 5.0);
+configureMaterial('minecraft',          'chainmail',       13,   1.00,                 1.0);
+configureMaterial('minecraft',          'iron',            15,   0.55,                 5.5);
+configureMaterial('progression_reborn', 'rose',            16,   1.00,                 5.5);
+configureMaterial('bronze',             'bronze',          20,   1.00,                 6.5);
+configureMaterial('minecraft',          'diamond',         20,   1.00,                 5.5);
+configureMaterial('beersteel',          'steel',           30,   1.00,                 9.0);
+configureMaterial('x',                  'refined_diamond', 36,   1.00,                11.0); // TODO
+configureMaterial('minecraft',          'netherite',       40,   1.00,                13.0);
 
-//             namespace             armor            prot  durability
-configureArmor('minecraft',          'golden',          9,  385);
-configureArmor('progression_reborn', 'copper',          11, 400);
-configureArmor('minecraft',          'chainmail',       13, 825);
-configureArmor('minecraft',          'iron',            15, 450);
-configureArmor('progression_reborn', 'rose',            16, 1100);
-configureArmor('bronze',             'bronze',          20, 825);
-configureArmor('minecraft',          'diamond',         20, 1000);
-configureArmor('beersteel',          'steel',           30, 1400);
-configureArmor('x',                  'refined_diamond', 36, 1815); // TODO
-configureArmor('minecraft',          'netherite',       40, 2035);
-
-// This section is needed to create custom anvil recipies in server_scripts
+// vvv-- This section is needed to create custom anvil recipies in server_scripts --vvv
 LycheeEvents.customAction('repair_item', event => {
     let durability = event.data.durability
     event.action.applyFunc = (recipe, ctx, times) => {
@@ -59,10 +54,13 @@ LycheeEvents.customCondition('is_item_damaged', event => {
         return ctx.getItem(indexes.get(0)).damaged ? times : 0
     }
 })
-//////////////////////////////////////////////////////////////////////////
+// ^^^------------------------------------------------------------------------------^^^
 
-function configureArmor(namespace, material, prot, durability) {
-    // The ratios hardcoded here are based on the vanilla game's average distributions
+function configureMaterial(namespace, material, prot, durabilityMultiplier, swordDamage) {
+    var prefix = getPrefix(namespace, material);
+    var durabilityFunction = (x) => Math.max(Math.round(x.maxDamage *= durabilityMultiplier), 1);
+
+    // ARMOR; The ratios hardcoded here are based on the vanilla game's average distributions
     setArmorSetProperty(
         namespace,
         material,
@@ -78,9 +76,22 @@ function configureArmor(namespace, material, prot, durability) {
     setArmorSetProperty(
         namespace,
         material,
-        getArmorValues([20, 29, 27, 24], durability),
-        (x, y) => x.maxDamage = y
+        [null, null, null, null],//getArmorValues([20, 29, 27, 24], durability),
+        (x, y) => durabilityFunction(x)
     );
+
+    // TOOLS/WEAPONS DURABILITY:
+    setItemProperty(prefix + 'hoe', durabilityFunction);
+    setItemProperty(prefix + 'pickaxe', durabilityFunction);
+    setItemProperty(prefix + 'axe', durabilityFunction);
+    setItemProperty(prefix + 'shovel', durabilityFunction);
+    setItemProperty(prefix + 'knife', durabilityFunction);
+    setItemProperty(getPrefix('farmersdelight', material) + 'knife', durabilityFunction);
+    setItemProperty(getPrefix('betterend', material) + 'hammer', durabilityFunction);
+    setItemProperty(prefix + 'sword', durabilityFunction);
+
+    // SWORD DAMAGE
+    setItemProperty(prefix + 'sword', (x) => x.attackDamage = swordDamage - 1) // Every time I set a sword's attackDamage via script, in game it appears one higher. This accounts for that.
 }
 
 // all arrays go like: helm, chest, legs, boots
