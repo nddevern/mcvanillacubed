@@ -457,9 +457,13 @@ mode = "fastest"
 
 			[light_sources.settings.entities.paradise_lost]
 				envoy = true
+				moa = true
 
 			[light_sources.settings.entities.shield_overhaul]
 				shield_bash_entity = true
+
+			[light_sources.settings.entities.items_displayed]
+				item_display = true
 
 		[light_sources.settings.block_entities]
 

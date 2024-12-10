@@ -127,48 +127,113 @@ ServerEvents.recipes(event => {
         }
     );
 
+    // Refined Diamond
+    event.shapeless(Item.of('kubejs:refined_diamond'), ['2x minecraft:diamond', 'minecraft:nether_star']).keepIngredient('minecraft:nether_star');
+
+    //   Refined Diamond Block
+    event.shapeless(Item.of('9x kubejs:refined_diamond'), ['kubejs:refined_diamond_block'])
+    event.shapeless(Item.of('kubejs:refined_diamond_block'), ['9x kubejs:refined_diamond'])
+
+    //   Refined Diamond Armor
+    event.shaped(
+        Item.of('kubejs:refined_diamond_helmet', 1),
+        [
+            'RRR',
+            'R R'
+        ],
+        {R: 'kubejs:refined_diamond'}
+    );
+    event.shaped(
+        Item.of('kubejs:refined_diamond_chestplate', 1),
+        [
+            'R R',
+            'RRR',
+            'RRR'
+        ],
+        {R: 'kubejs:refined_diamond'}
+    );
+    event.shaped(
+        Item.of('kubejs:refined_diamond_leggings', 1),
+        [
+            'RRR',
+            'R R',
+            'R R'
+        ],
+        {R: 'kubejs:refined_diamond'}
+    );
+    event.shaped(
+        Item.of('kubejs:refined_diamond_boots', 1),
+        [
+            'R R',
+            'R R'
+        ],
+        {R: 'kubejs:refined_diamond'}
+    );
+
+    //   Refined Diamond Tools
+    event.shaped(
+        Item.of('kubejs:refined_diamond_hoe', 1),
+        [
+            'RR',
+            ' S',
+            ' S'
+        ],
+        {R: 'kubejs:refined_diamond', S: 'minecraft:stick'}
+    );
+    event.shaped(
+        Item.of('kubejs:refined_diamond_pickaxe', 1),
+        [
+            'RRR',
+            ' S ',
+            ' S '
+        ],
+        {R: 'kubejs:refined_diamond', S: 'minecraft:stick'}
+    );
+    event.shaped(
+        Item.of('kubejs:refined_diamond_axe', 1),
+        [
+            'RR',
+            'RS',
+            ' S'
+        ],
+        {R: 'kubejs:refined_diamond', S: 'minecraft:stick'}
+    );
+    event.shaped(
+        Item.of('kubejs:refined_diamond_shovel', 1),
+        [
+            'R',
+            'S',
+            'S'
+        ],
+        {R: 'kubejs:refined_diamond', S: 'minecraft:stick'}
+    );
+    event.shaped(
+        Item.of('kubejs:refined_diamond_sword', 1),
+        [
+            'R',
+            'R',
+            'S'
+        ],
+        {R: 'kubejs:refined_diamond', S: 'minecraft:stick'}
+    );
+
     // Bronze
     event.shapeless(Item.of('bronze:bronze_blend'), ['3x minecraft:copper_ingot', 'bronze:tin_ingot'])
     event.shapeless(Item.of('bronze:bronze_blend'), ['3x minecraft:raw_copper',   'bronze:tin_ingot'])
     event.shapeless(Item.of('bronze:bronze_blend'), ['3x minecraft:copper_ingot', 'bronze:raw_tin'])
 
-    // Bow repair
-    event.custom({
-        "type": "lychee:anvil_crafting",
-        "item_in": [
-            {
-                "item": "bow",
-                "lychee:tag": {
-                    "Damage": 1
-                }
-            },
-            {
-                "item": "string"
-            }
-        ],
-        "item_out": {
-            "item": "bow"
-        },
-        "assembling": [
-            {
-                "type": "nbt_patch",
-                "op": "copy",
-                "from": "/item_in/0/tag",
-                "path": "/item_out/tag"
-            },
-            {
-                "type": "custom",
-                "id": "repair_item",
-                "target": "/item_out",
-                "durability": 128
-            }
-        ],
-        "contextual": {
-            "type": "custom",
-            "id": "is_item_damaged",
-            "target": "/item_in/0"
-        }
-    });
+    // Repair
+    createRepairRecipe(event, "bow", "string", 128)
+    createRepairRecipe(event, "kubejs:refined_diamond_helmet", "kubejs:refined_diamond", 75)
+    createRepairRecipe(event, "kubejs:refined_diamond_chestplate", "kubejs:refined_diamond", 75)
+    createRepairRecipe(event, "kubejs:refined_diamond_leggings", "kubejs:refined_diamond", 75)
+    createRepairRecipe(event, "kubejs:refined_diamond_boots", "kubejs:refined_diamond", 100)
+    createRepairRecipe(event, "kubejs:refined_diamond_hoe", "kubejs:refined_diamond", 520)
+    createRepairRecipe(event, "kubejs:refined_diamond_pickaxe", "kubejs:refined_diamond", 520)
+    createRepairRecipe(event, "kubejs:refined_diamond_axe", "kubejs:refined_diamond", 520)
+    createRepairRecipe(event, "kubejs:refined_diamond_shovel", "kubejs:refined_diamond", 520)
+    createRepairRecipe(event, "kubejs:refined_diamond_sword", "kubejs:refined_diamond", 520)
+
 
 });
 
@@ -216,3 +281,42 @@ ServerEvents.tags('block', event => {
     deepslateBlocks.forEach((x) => event.add('minecraft:needs_diamond_tool',  x));
 
 });
+
+function createRepairRecipe(event, damagedItem, repairMaterial, durabilityToRepair) {
+    event.custom({
+        "type": "lychee:anvil_crafting",
+        "item_in": [
+            {
+                "item": damagedItem,
+                "lychee:tag": {
+                    "Damage": 1
+                }
+            },
+            {
+                "item": repairMaterial
+            }
+        ],
+        "item_out": {
+            "item": damagedItem
+        },
+        "assembling": [
+            {
+                "type": "nbt_patch",
+                "op": "copy",
+                "from": "/item_in/0/tag",
+                "path": "/item_out/tag"
+            },
+            {
+                "type": "custom",
+                "id": "repair_item",
+                "target": "/item_out",
+                "durability": durabilityToRepair
+            }
+        ],
+        "contextual": {
+            "type": "custom",
+            "id": "is_item_damaged",
+            "target": "/item_in/0"
+        }
+    });
+}
