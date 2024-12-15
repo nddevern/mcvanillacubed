@@ -1,6 +1,54 @@
 [
   {
     "user": {
+      "type": "other",
+      "name": "Console"
+    },
+    "time": 1734290077089,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/KK0hR9HZSz"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "Console"
+    },
+    "time": 1734279395496,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/MojAcDoDZ0"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "Console"
+    },
+    "time": 1734278900517,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/Y1cwDDWeDJ"
+    }
+  },
+  {
+    "user": {
+      "type": "other",
+      "name": "Console"
+    },
+    "time": 1734275999519,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/tABYIPrCxb"
+    }
+  },
+  {
+    "user": {
       "type": "player",
       "name": "Nodever2",
       "uniqueId": "bbb3f361-e09f-47f2-afb1-2e521b1f1e45"

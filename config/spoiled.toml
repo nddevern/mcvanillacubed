@@ -4,7 +4,7 @@ spoilRate = 90
 initializeSpoiling = true
 mergeSpoilingFood = true
 spoilEverything = false
-spoilBlacklist = ["minecraft:rotten_flesh", "minecraft:enchanted_golden_apple"]
+spoilBlacklist = ["minecraft:rotten_flesh", "minecraft:enchanted_golden_apple", "minecraft:golden_apple", "minecraft:golden_carrot"]
 defaultSpoilTime = 40
 defaultSpoilItem = "minecraft:rotten_flesh"
 [compat]
