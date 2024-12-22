@@ -224,6 +224,7 @@ ServerEvents.recipes(event => {
 
     // Repair
     createRepairRecipe(event, "bow", "string", 128)
+    createRepairRecipe(event, "crossbow", "tripwire_hook", 128)
     createRepairRecipe(event, "kubejs:refined_diamond_helmet", "kubejs:refined_diamond", 75)
     createRepairRecipe(event, "kubejs:refined_diamond_chestplate", "kubejs:refined_diamond", 75)
     createRepairRecipe(event, "kubejs:refined_diamond_leggings", "kubejs:refined_diamond", 75)

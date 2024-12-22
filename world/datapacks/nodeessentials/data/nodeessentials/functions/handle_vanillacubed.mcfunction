@@ -8,5 +8,8 @@ execute as @e[type=cave_spider] run effect give @s speed infinite 1 true
 execute as @e[type=creeper] at @s run tp @s ~ -10000 ~
 execute as @e[type=zombie_horse] at @s run tp @s ~ -10000 ~
 
-execute as @e[type=skeleton] at @s unless entity @a[distance=..128] run tp @s ~ ~-1000 ~
-execute as @e[type=skeleton] at @s unless entity @a[distance=..128] run kill @s
+execute as @e[type=skeleton] at @s unless entity @a[distance=..128] run tp @s ~ -10000 ~
+execute as @e[type=zombie] at @s unless entity @a[distance=..128] run tp @s ~ -10000 ~
+execute as @e[type=spider] at @s unless entity @a[distance=..128] run tp @s ~ -10000 ~
+execute as @e[type=cave_spider] at @s unless entity @a[distance=..128] run tp @s ~ -10000 ~
+execute as @e[y=-9990,dy=-10000] run kill @s
