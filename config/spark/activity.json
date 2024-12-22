@@ -1,6 +1,19 @@
 [
   {
     "user": {
+      "type": "player",
+      "name": "Nodever2",
+      "uniqueId": "bbb3f361-e09f-47f2-afb1-2e521b1f1e45"
+    },
+    "time": 1734746379534,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/VjPEaecJD7"
+    }
+  },
+  {
+    "user": {
       "type": "other",
       "name": "Console"
     },
