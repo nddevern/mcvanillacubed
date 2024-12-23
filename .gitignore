@@ -13,7 +13,7 @@ libraries/*
 config/litematica/*
 config/inventoryprofilesnext/*/
 config/minihud/*
-config/spark/tmp/*
+config/spark/*
 config/stack-to-nearby-chests/locked-slots/*
 config/worldedit/.archive-unpack/*
 config/jei/world/*
