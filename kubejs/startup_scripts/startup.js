@@ -73,10 +73,10 @@ configureMaterial('minecraft',          'chainmail',       13,   1.00,          
 configureMaterial('minecraft',          'iron',            15,   0.55,                 5.5);
 configureMaterial('progression_reborn', 'rose',            16,   1.00,                 5.5);
 configureMaterial('bronze',             'bronze',          20,   1.00,                 6.5);
-configureMaterial('minecraft',          'diamond',         20,   0.61,                 5.5);
-configureMaterial('beersteel',          'steel',           30,   1.00,                 9.0);
-configureMaterial('kubejs',             'refined_diamond', 36,   1.00,                11.0);
-configureMaterial('minecraft',          'netherite',       40,   1.00,                13.0);
+configureMaterial('minecraft',          'diamond',         20,   0.70,                 5.5);
+configureMaterial('beersteel',          'steel',           30,   0.85,                 9.0);
+configureMaterial('kubejs',             'refined_diamond', 36,   1.20,                11.0);
+configureMaterial('minecraft',          'netherite',       40,   1.15,                13.0);
 
 // vvv-- This section is needed to create custom anvil recipies in server_scripts --vvv
 LycheeEvents.customAction('repair_item', event => {
