@@ -11,6 +11,18 @@ const MiningLevels = Object.freeze({
     NETHERITE: 4
 });
 
+BlockEvents.modification(event => {
+    event.modify('minecraft:soul_torch',          block => { block.lightEmission = 15 })
+    event.modify('minecraft:soul_wall_torch',     block => { block.lightEmission = 15 })
+    event.modify('minecraft:soul_lantern',        block => { block.lightEmission = 15 })
+    event.modify('minecraft:soul_campfire',       block => { block.lightEmission = 15 })
+    event.modify('minecraft:wall_torch',          block => { block.lightEmission = 12 })
+    event.modify('minecraft:torch',               block => { block.lightEmission = 12 })
+    event.modify('minecraft:lantern',             block => { block.lightEmission = 12 })
+    event.modify('minecraft:campfire',            block => { block.lightEmission = 12 })
+    event.modify('extendedcopper:copper_lantern', block => { block.lightEmission = 12 })
+});
+
 ItemEvents.toolTierRegistry(event => { // https://minecraft.wiki/w/Tiers
     event.add('refined_diamond', tier => {
         tier.uses = 1561
@@ -20,7 +32,7 @@ ItemEvents.toolTierRegistry(event => { // https://minecraft.wiki/w/Tiers
         tier.enchantmentValue = 10
         tier.repairIngredient = 'kubejs:refined_diamond'
     })
-})
+});
 
 ItemEvents.armorTierRegistry(event => { // https://minecraft.wiki/w/Armor_materials
     event.add('refined_diamond', tier => {
@@ -32,7 +44,7 @@ ItemEvents.armorTierRegistry(event => { // https://minecraft.wiki/w/Armor_materi
         tier.toughness = 2.0 // diamond has 2.0, netherite 3.0
         tier.knockbackResistance = 0.0
     })
-})
+});
 
 StartupEvents.registry('block', event => {
     event.create('refined_diamond_block')
