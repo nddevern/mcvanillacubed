@@ -779,7 +779,7 @@
     "tweakStructureBlockLimit": false,
     "tweakSwapAlmostBrokenTools": false,
     "tweakTabCompleteCoordinate": false,
-    "tweakToolSwitch": false,
+    "tweakToolSwitch": true,
     "tweakWeaponSwitch": false,
     "tweakYMirror": false,
     "tweakZoom": false
@@ -1005,7 +1005,7 @@
       "keys": ""
     },
     "tweakToolSwitch": {
-      "keys": "H"
+      "keys": ""
     },
     "tweakWeaponSwitch": {
       "keys": ""

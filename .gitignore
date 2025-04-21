@@ -10,6 +10,7 @@ kubejs/probe/*
 libraries/*
 Distant_Horizons_server_data/*
 config/worldedit/sessions/*
+config/coordinatelist/*
 
 #omitted world-specific config files
 config/litematica/*
