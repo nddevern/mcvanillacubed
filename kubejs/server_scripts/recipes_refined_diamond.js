@@ -2,6 +2,7 @@
 ServerEvents.recipes(event => {
     // Refined Diamond
     event.shapeless(Item.of('kubejs:refined_diamond'), ['minecraft:diamond', 'minecraft:nether_star']).keepIngredient('minecraft:nether_star');
+    event.shapeless(Item.of('minecraft:diamond'), ['kubejs:refined_diamond', 'minecraft:nether_star']).keepIngredient('minecraft:nether_star');
 
     //   Refined Diamond Block
     event.shapeless(Item.of('9x kubejs:refined_diamond'), ['kubejs:refined_diamond_block'])
@@ -89,4 +90,24 @@ ServerEvents.recipes(event => {
         ],
         {R: 'kubejs:refined_diamond', S: 'minecraft:stick'}
     );
+
+    // Netherite upgrades
+    replceNetheriteUpgrade(event, 'shovel');
+    replceNetheriteUpgrade(event, 'pickaxe');
+    replceNetheriteUpgrade(event, 'axe');
+    replceNetheriteUpgrade(event, 'hoe');
+    replceNetheriteUpgrade(event, 'sword');
+    replceNetheriteUpgrade(event, 'helmet');
+    replceNetheriteUpgrade(event, 'chestplate');
+    replceNetheriteUpgrade(event, 'leggings');
+    replceNetheriteUpgrade(event, 'boots');
 })
+
+function replceNetheriteUpgrade(event, tooltype)
+{
+    event.replaceInput(
+        { output: 'minecraft:netherite_' + tooltype, input: 'minecraft:diamond_' + tooltype },
+        'minecraft:diamond_' + tooltype,
+        'kubejs:refined_diamond_' + tooltype
+    )
+}
