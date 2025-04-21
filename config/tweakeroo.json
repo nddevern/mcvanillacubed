@@ -779,7 +779,7 @@
     "tweakStructureBlockLimit": false,
     "tweakSwapAlmostBrokenTools": false,
     "tweakTabCompleteCoordinate": false,
-    "tweakToolSwitch": true,
+    "tweakToolSwitch": false,
     "tweakWeaponSwitch": false,
     "tweakYMirror": false,
     "tweakZoom": false

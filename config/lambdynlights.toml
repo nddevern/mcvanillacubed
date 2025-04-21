@@ -358,6 +358,9 @@ mode = "fastest"
 				rhino = true
 				hippo = true
 				zebra = true
+				elephant = true
+				lion = true
+				alligator = true
 
 			[light_sources.settings.entities.betternether]
 				hydrogen_jellyfish = true
@@ -377,6 +380,7 @@ mode = "fastest"
 				wither_bonefish = true
 				lava_pufferfish = true
 				glowdine = true
+				obsidianfish = true
 
 			[light_sources.settings.entities.nethersheep]
 				atre = true
@@ -464,6 +468,9 @@ mode = "fastest"
 
 			[light_sources.settings.entities.items_displayed]
 				item_display = true
+
+			[light_sources.settings.entities.regions_unexplored]
+				boat = true
 
 		[light_sources.settings.block_entities]
 

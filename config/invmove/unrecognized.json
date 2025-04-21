@@ -59,6 +59,9 @@
     "mezz.jei.gui.recipes.RecipesGui": true,
     "net.mehvahdjukaar.sawmill.SawmillScreen": true,
     "net.kikoz.mcwfurnitures.storage.FurnitureScreen": true,
-    "com.li64.tide.client.gui.screens.AnglerWorkshopScreen": true
+    "com.li64.tide.client.gui.screens.AnglerWorkshopScreen": true,
+    "org.betterx.betterend.client.gui.EndStoneSmelterScreen": true,
+    "vectorwing.farmersdelight.client.gui.CookingPotScreen": true,
+    "net.artienia.rubinated_nether.screen.FreezerScreen": true
   }
 }
