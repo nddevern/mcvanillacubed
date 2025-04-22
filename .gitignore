@@ -59,3 +59,4 @@ world/*
 config/spark/activity.json
 Distant_Horizons_server_data/Localhost/the_nether/DistantHorizons.sqlite
 config/spark/activity.json
+fabric-server-mc.1.20.1-loader.0.16.11-launcher.1.0.3.jar
