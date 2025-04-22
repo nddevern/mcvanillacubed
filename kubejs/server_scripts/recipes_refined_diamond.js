@@ -1,8 +1,8 @@
 
 ServerEvents.recipes(event => {
     // Refined Diamond
-    event.shapeless(Item.of('kubejs:refined_diamond'), ['minecraft:diamond', 'minecraft:nether_star']).keepIngredient('minecraft:nether_star');
-    event.shapeless(Item.of('minecraft:diamond'), ['kubejs:refined_diamond', 'minecraft:nether_star']).keepIngredient('minecraft:nether_star');
+    event.shapeless(Item.of('kubejs:refined_diamond'), ['2x minecraft:diamond', 'minecraft:nether_star']).keepIngredient('minecraft:nether_star');
+    event.shapeless(Item.of('2x minecraft:diamond'), ['kubejs:refined_diamond', 'minecraft:nether_star']).keepIngredient('minecraft:nether_star');
 
     //   Refined Diamond Block
     event.shapeless(Item.of('9x kubejs:refined_diamond'), ['kubejs:refined_diamond_block'])
